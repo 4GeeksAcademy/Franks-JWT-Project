@@ -80,10 +80,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"Authorization" : "Bearer" + token,
 					}
 				}).then(response => response.json())
-				.then(data => data.identity) //guardar token en var (habia console.log(data))
+				.then(data => data.identity) 
 				.catch(err => err)
 
-				console.log(data.identity) //esto es nuevo
+				console.log(data.identity) 
 			},
 
 			// LOGOUT
